@@ -1,38 +1,3 @@
-// let chatHistory = [];
-
-//         function sendMessage() {
-//             let userInput = document.getElementById("message-input").value;
-//             if (userInput.trim() === "") return;
-
-//             appendMessage("You: " + userInput, "user-message");
-
-//             fetch("/chat", {
-//                 method: "POST",
-//                 headers: {
-//                     "Content-Type": "application/json"
-//                 },
-//                 credentials: "include",
-//                 body: JSON.stringify({ message: userInput, history: chatHistory })
-//             })
-//             .then(response => response.json())
-//             .then(data => {
-//                 appendMessage("Bot: " + data.message, "bot-message");
-//                 chatHistory = data.history;
-//             })
-//             .catch(error => console.error("Error:", error));
-
-//             document.getElementById("message-input").value = "";
-//         }
-
-//         function appendMessage(text, className) {
-//             let chatBox = document.getElementById("chat-box");
-//             let messageDiv = document.createElement("div");
-//             messageDiv.className = "message " + className;
-//             messageDiv.textContent = text;
-//             messageDiv.style.color = "#ffffff";
-//             chatBox.appendChild(messageDiv);
-//             chatBox.scrollTop = chatBox.scrollHeight;
-//         }
 document.addEventListener("DOMContentLoaded", function () {
     const chatBox = document.getElementById("chat-box");
     const messageInput = document.getElementById("message-input");
